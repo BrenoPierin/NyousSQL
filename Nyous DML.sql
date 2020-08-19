@@ -29,6 +29,10 @@ INSERT INTO Usuario (Nome, Email, Senha, DataNascimento, idClasse) VALUES
 	1
 	);
 
+UPDATE Usuario SET
+	DataNascimento = ('2004-09-15T00:00:00')
+WHERE idUsuario = 1;
+
 INSERT INTO Evento (DataEvento, Capacidade, IdLocalizacao, IdCategoria) VALUES
 	('2020-09-25T20:00:00',
 	100,
